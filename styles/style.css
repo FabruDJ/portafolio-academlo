@@ -1,0 +1,578 @@
+:root {
+    /* COLORS */
+    --primary-color: #F1A600;
+    --secondary-color: #242635;
+    --dark: #1F1D2C;
+    --gray: #E5E5E5;
+    --white: #FFFFFF;
+
+    /* TEXT */
+    --title: 80px;
+    --subtitle: 40px;
+    --p: 18px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+/* ----------- BG HERO ---------- */
+
+.container-rectangle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rectangle-gray {
+    background-color: var(--secondary-color);
+    height: 85%;
+    width: 40%;
+    position: absolute;
+    z-index: 0;
+}
+
+.hero-nav {
+    height: 650px;
+    background-color: var(--dark);
+}
+
+
+/* ------------- NAV -------------- */
+
+.fa-bars {
+    color: var(--white);
+    position: absolute;
+    margin: 3rem;
+    display: none;
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+.fa-bars:hover {
+    color: var(--primary-color);
+}
+
+.nav {
+    background-color: var(--dark);
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--white);
+    margin-right: 5rem;
+    z-index: 1;
+    text-align: center;
+}
+
+.nav a:hover {
+    color: var(--primary-color);
+}
+
+
+/* ----------- HERO ------------ */
+
+.container-hero {
+    display: flex;
+}
+
+.hero-text {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 80px;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+.hero-text p {
+    font-size: 2rem;
+    color: var(--white);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.text-primary_color {
+    color: var(--primary-color);
+}
+
+.icons-rrss img {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 3rem;
+}
+
+.hero-img {
+    width: 40%;
+    margin-top: 8rem;
+    z-index: 1;
+    width: 40rem;
+    height: 40rem;
+    margin-left: 10rem;
+}
+
+.hero-img-query {
+    display: none;
+}
+
+/* -------------- ABOUT ME ----------------- */
+
+.about-me {
+    background-color: var(--secondary-color);
+    padding: 5rem 30%;
+}
+
+.about-me_text h3 {
+    margin: 0;
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-me_text p {
+    color: var(--white);
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.about-me_icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5.5rem;
+}
+
+.logos-container h4,
+.logos-container p {
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.logos-container p {
+    font-size: 1.3rem;
+}
+
+.logos-container {
+    color: var(--white);
+}
+
+.logo-academlo_uvm {
+    height: 8rem;
+    width: 8rem;
+    align-items: center;
+}
+
+
+/* ------------- EXPERIENCE ----------------- */
+
+.experience {
+    background-color: var(--dark);
+    padding: 5rem 30% 2rem 30%;
+}
+
+.experience-title h3 {
+    margin: 0;
+    text-align: center;
+    color: var(--white);
+    font-size: 3rem;
+    margin-bottom: 6rem;
+}
+
+.container-experience h4 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.txt-contain-p {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.txt-contain-sinc {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.icon img {
+    height: 8rem;
+    width: 8rem;
+    margin-right: 8vw;
+}
+
+.container-experience_1 h4,
+.container-experience_1, p {
+    margin: 0;
+}
+
+.container-experience_1 {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.container-icon-text {
+    display: flex;
+    align-items: center;
+}
+
+
+.icons-since_text {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 5rem;
+}
+
+
+/* ------------- MY ABILITIES -------------- */
+
+.abilities-rectangle {
+    width: 50%;
+    height: 57.5rem;
+    background-color: var(--secondary-color);
+    position: absolute;
+    z-index: 0;
+    display: none;
+}
+
+.my-abilities-section {
+    background-color: var(--secondary-color);
+    padding: 5rem;
+}
+
+.my-abilities-title {
+    margin: 0;
+    text-align: center;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.ability {
+    padding: 2rem 20%;
+    display: flex;
+}
+
+.ability-number {
+    font-size: 5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.ability-text {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 10%;
+}
+
+.ability p {
+    z-index: 1;
+}
+
+
+/* ---------------- MI PORTAFOLIO ------------------ */
+
+.portafolio {
+    background-color: var(--dark);
+    padding: 6rem 21%;
+}
+
+.portafolio h3 {
+    margin: 0;
+    text-align: center;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.portafolio-img-container img {
+    height: 20rem;
+    width: 30rem;
+}
+
+.ejemplos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.ejemplo1,
+.ejemplo3 {
+    box-shadow: -1px -7px 0px 7px var(--primary-color);
+}
+
+.ejemplo2 {
+    box-shadow: -1px -7px 0px 7px var(--secondary-color);
+}
+
+
+/* --------------------- MY CONTACT --------------------*/
+
+.my-contact {
+    background-color: var(--secondary-color);
+    padding: 5rem 25rem;
+}
+
+.my-contact h3 {
+    margin: 0;
+    color: var(--white);
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 7rem;
+}
+
+.contact-group {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact img {
+    height: 65px;
+    margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 1.7rem;
+}
+
+.contact-p {
+    font-size: 1.3rem;
+    color: #9f9f9f;
+}
+
+
+/* --------------------- FOOTER --------------------*/
+
+footer {
+    background-color: var(--dark);
+    color: var(--white);
+    font-weight: 400;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer p {
+    margin-bottom: 2.5rem;
+}
+
+
+/* ---------------- MEDIA QUERYS ------------------- */
+
+@media (max-width: 860px) {
+    .nav {
+        display: none;
+    }
+    
+    .fa-bars {
+        display: block;
+    }
+
+    .rectangle-gray {
+        height: 80%;
+        width: 60%;
+    }
+
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-text {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text p {
+        text-align: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .hero-img-query {
+        width: 270px;
+        display: block;
+    }
+
+    .about-me {
+        padding: 5rem 20%;
+    }
+
+    .experience {
+        padding: 5rem 20% 2rem 20%;
+    }
+
+    .ejemplos {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .ejemplo1,
+    .ejemplo2,
+    .ejemplo3 {
+        margin-bottom: 3.5rem;
+    }
+
+    .portafolio-img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-contact {
+        padding: 5rem 18rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .my-contact {
+        padding: 5rem 5rem;
+    }
+
+    .contact-group {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .contact {
+        gap: 0.3rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .rectangle-gray {
+        height: 70%;
+        width: 70%;
+    }
+
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+    
+    .hero-text p {
+        font-size: 1.8rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .hero-img-query {
+        width: 275px;
+    }
+
+    .icons-rrss img {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 0;
+    }
+
+    .icons-rrss {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .about-me {
+        padding: 5rem 10%;
+    }
+
+    .about-me_icons {
+        margin-top: 5.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .logos-container h4,
+    .logos-container p {
+        margin-top: 0.5rem;
+    }
+
+    .experience {
+        padding: 5rem 10% 2rem 5%;
+    }
+
+    .icon img {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    .container-experience h4 {
+        font-size: 1.8rem;
+    }
+    
+    .txt-contain-p {
+        font-size: 1.3rem;
+    }
+    
+    .txt-contain-sinc {
+        margin-top: 0.3rem;
+    }
+
+    .icons-since_text {
+        font-size: 1.8rem;
+        margin-left: 5rem;
+    }
+
+    .my-abilities-section {
+        padding: 5rem 0;
+    }
+
+    .ability {
+        padding: 2rem 12%;
+    }
+
+    .ability-number {
+        font-size: 4rem;
+    }
+    
+    .ability-text {
+        font-size: 1.5rem;
+    }
+}
